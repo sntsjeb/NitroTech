@@ -1,0 +1,150 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 105px;
+  padding: 0 20px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  flex-wrap: wrap; /* allows stacking on small screens */
+}
+
+/* Logo */
+.navbar .logo img {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Nav Links */
+.navbar .nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-links li a {
+  text-decoration: none;
+  color: #030303;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 550;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+  color: #E83132;
+}
+
+/* Nav Buttons */
+.navbar .nav-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* General Button Styles */
+.navbar .nav-buttons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 10px;
+  height: 51px;
+  padding: 0 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* Outline Button */
+.navbar .nav-buttons .btn-outline {
+  border: 1px solid #e63946;
+  color: #e63946;
+  background: #fff;
+}
+
+.navbar .nav-buttons .btn-outline:hover {
+  background: #e63946;
+  color: #fff;
+}
+
+/* Danger (Red) Button */
+.navbar .nav-buttons .btn-danger {
+  background: #e63946;
+  color: #fff;
+  border: none;
+}
+
+.navbar .nav-buttons .btn-danger:hover {
+  background: #d62839;
+  opacity: 0.9;
+}
+
+/* Icon inside button */
+.navbar .nav-buttons .btn-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* ===================== */
+/* Responsive Styling */
+/* ===================== */
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .navbar .nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .navbar .nav-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar .logo img {
+    width: 150px;
+  }
+
+  .navbar .nav-links {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .navbar .nav-buttons a {
+    width: 100%;
+    max-width: 220px;
+  }
+}

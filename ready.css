@@ -1,0 +1,165 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  color: #030303;
+} 
+
+/* Business Section */
+.business-level {
+  padding: 80px 0;
+  position: relative;
+}
+
+.business-level__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;   
+  margin: 0 auto;      
+  padding: 0 20px;    
+}
+
+.business-level__map img {
+  width: 606px;
+  height: 396px;
+  display: block;
+}
+
+.business-level__content {
+  flex: 1;
+}
+
+.business-level__content h2 {
+  font-weight: 600;        
+  font-style: normal;
+  font-size: 34px;
+  line-height: 150%;    
+  letter-spacing: 0;
+  margin-bottom: 20px;
+  color: #030303;       
+  max-width: 582px;        
+}
+
+.business-level__content p {
+  font-weight: 400;    
+  font-style: normal;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: #030303;         
+  margin-bottom: 15px;
+  max-width: 551px; 
+}
+
+/* Buttons */
+.business-level__cta {
+  margin: 25px 0;
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 198px;
+  height: 51px;
+  background: #e74c3c;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #c0392b;
+}
+
+.btn-outline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 185px;
+  height: 51px;
+  border: 1px solid #e74c3c;
+  border-radius: 10px;
+  background: transparent;
+  color: #e74c3c;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: #e74c3c;
+  color: #fff;
+}
+
+/* Quote Section */
+.business-level__quote {
+  margin-top: 30px;
+  max-width: 541px;       
+  font-weight: 400;       
+  font-size: 14px;        
+  line-height: 150%;      
+  font-style: italic;
+  color: #030303B8;
+}
+
+.quote-icon {
+  width: 32px;
+  height: 24px;         
+  margin-right: 8px;
+  vertical-align: middle; 
+  display: inline-block;  
+}
+
+.quote-author {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  gap: 12px;
+}
+
+.quote-author img {
+  width: 47px;      
+  height: 47px;     
+  border-radius: 50%; 
+  object-fit: cover; 
+
+}
+
+.quote-author h4 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.quote-author span {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 200%;
+  color: #d32f2f;
+}

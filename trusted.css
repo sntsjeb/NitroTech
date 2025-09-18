@@ -1,0 +1,76 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+}
+
+/* Trusted Companies */
+.trusted {
+  margin-top: 70px;
+  text-align: center;
+  font-size: 14px;
+  color: #090702;
+  letter-spacing: 0.5px;
+}
+
+.trusted p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+/* Logos wrapper */
+.trusted-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* allows wrapping on smaller screens */
+  gap: 25px;
+  /* even spacing */
+}
+
+/* Individual logos */
+.trusted img {
+  max-width: 218px;
+  /* limit width */
+  max-height: 56px;
+  /* limit height */
+  width: auto;
+  /* scale naturally */
+  height: auto;
+  /* scale naturally */
+  margin: 15px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  object-fit: contain;
+}
+
+/* Tablet screens */
+@media (max-width: 992px) {
+  .trusted img {
+    max-width: 180px;
+    max-height: 46px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 576px) {
+  .trusted img {
+    max-width: 140px;
+    max-height: 36px;
+  }
+}

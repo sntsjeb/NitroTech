@@ -1,0 +1,208 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  padding: 100px 20px;
+  text-align: center;
+  background: #fff;
+  overflow: hidden;
+}
+
+/* Decorative dots (left background) */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 228px;
+  left: -64px;
+  width: 419px;
+  height: 419px;
+  background: url("images/dot.png") repeat;
+  background-size: auto;
+  opacity: 1;
+  z-index: 0;
+}
+
+.hero .hero-content {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  z-index: 1;
+}
+
+.hero .hero-content h1 {
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 110%;
+  color: #030303;
+  margin-bottom: 20px;
+}
+
+.hero .hero-content p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #030303;
+  max-width: 650px;
+  margin: 0 auto 40px auto;
+}
+
+/* Testimonial */
+.hero .testimonial {
+  width: 541px;
+  max-width: 100%;
+  margin: 40px auto;
+  text-align: left;
+}
+
+.hero .testimonial .quote {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 15px;
+  font-style: italic;
+  color: #030303B8;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.hero .testimonial .quote-icon {
+  width: 32px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.hero .testimonial p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: left;
+  color: #030303B8;
+}
+
+.hero .testimonial .author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero .testimonial .author img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.hero .testimonial .author h4 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  margin: 0;
+  color: #030303;
+}
+
+.hero .testimonial .author span {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 200%;
+  color: #E83132;
+}
+
+/* CTA Button */
+.hero .hero-content .btn-danger {
+  display: inline-block;
+  background: #e63946;
+  color: #fff;
+  width: 255px;
+  height: 51px;
+  line-height: 51px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hero .hero-content .btn-danger:hover {
+  opacity: 0.9;
+}
+
+/* ==================== */
+/* Responsive Styles */
+/* ==================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .hero {
+    padding: 80px 15px;
+  }
+
+  .hero .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .hero .hero-content p {
+    font-size: 15px;
+  }
+
+  .hero .testimonial {
+    width: 100%;
+    margin: 30px auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .hero {
+    padding: 60px 10px;
+  }
+
+  .hero::before {
+    width: 250px;
+    height: 250px;
+    top: 120px;
+    left: -80px;
+    opacity: 0.5; /* fade dots a bit on small screens */
+  }
+
+  .hero .hero-content h1 {
+    font-size: 28px;
+    line-height: 120%;
+  }
+
+  .hero .hero-content p {
+    font-size: 14px;
+  }
+
+  .hero .hero-content .btn-danger {
+    width: 100%;
+    max-width: 220px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+  }
+
+  .hero .testimonial .quote {
+    font-size: 13px;
+  }
+
+  .hero .testimonial .author h4 {
+    font-size: 14px;
+  }
+
+  .hero .testimonial .author span {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,122 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  color: #030303;
+}
+
+/* CTA Section */
+.cta-section {
+  position: relative;
+  background: url("images/bg-map.png") no-repeat center top;
+  background-size: cover;  
+  width: 100%;              
+  height: 430px;            
+  color: #fff;
+  display: flex;
+  align-items: center;  
+  justify-content: flex-start;
+  text-align: left;           
+  padding-left: 256px;      
+  padding-right: 20px;       
+}
+
+.cta-container {
+  max-width: 765px;           
+}
+.cta-section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;    
+  font-size: 48px;      
+  line-height: 130%;    
+  letter-spacing: 0;    
+  margin-bottom: 20px;
+  color: #fff;     
+}
+
+.cta-section h2 .highlight {
+  color: #e74c3c; 
+}
+
+.cta-section p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;   
+  font-style: normal;
+  font-size: 16px;
+  line-height: 150%;  
+  letter-spacing: 0;
+  color: #f0f0f0;       
+  margin-bottom: 30px;
+  max-width: 765px;     
+}
+
+/* Buttons */
+.cta-buttons {
+  display: flex;
+  justify-content: flex-start; 
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/*Red CTA Button*/
+.cta-btn-dark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 141px;              
+  height: 48px;              
+  background: #E83132;     
+  color: #fff;
+  border: none;
+  border-radius: 10px;      
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;         
+  font-size: 14px;  
+  line-height: 100%;
+  letter-spacing: 0;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-btn-dark:hover {
+  background: #c0392b;  
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 165px;        
+  height: 48px;             
+  border: 1px solid #fff;  
+  border-radius: 10px;       
+  background: #fff;        
+  color: #E83132;            
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;         
+  font-size: 14px;          
+  line-height: 100%;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: #E83132;    
+}

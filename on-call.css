@@ -1,0 +1,171 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #030303;
+    background: #fff;
+    line-height: 1.6;
+}
+
+/* Section */
+.oncall {
+    position: relative;
+    padding: 100px 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+/* oncall container */
+.oncall .oncall-container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Left Column (Image) */
+.oncall .oncall-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.oncall .oncall-left .oncall-image {
+    width: 601px;
+    height: 601px;
+    border-radius: 10px;
+    object-fit: cover;
+    opacity: 1;
+}
+
+/* Right Column */
+.oncall .oncall-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Subtitle */
+.oncall .oncall-right .oncall-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #afafaf;
+    margin-bottom: 10px;
+    width: 266px;
+}
+
+/* Right Column Heading */
+.oncall .oncall-right .oncall-heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 1.3;
+    letter-spacing: 0%;
+    color: #030303;
+    width: 615px;
+    margin-bottom: 20px;
+    opacity: 1;
+}
+
+/* Right Column Text / Description */
+.oncall .oncall-right .oncall-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #030303;
+    width: 647px;
+    opacity: 1;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+/* Buttons container */
+.oncall .oncall-right .oncall-buttons {
+    display: flex;
+    gap: 15px;        
+    margin-top: 20px;   
+}
+
+/* Primary Button */
+.oncall .oncall-right .btn-quote {
+    display: inline-block;
+    background: #e63946;      
+    color: #fff;              
+    width: 198px;          
+    height: 51px;              
+    border-radius: 10px;     
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;          
+    font-size: 16px;         
+    line-height: 51px;        
+    letter-spacing: 0%;
+    text-align: center;       
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.oncall .oncall-right .btn-quote:hover {
+    background: #c82333;
+}
+
+.oncall .oncall-right .btn-talk {
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #e63946;
+    color: #e63946;
+    width: 185px;
+    height: 51px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;      /* changed from 600 to 400 */
+    font-size: 16px;
+    line-height: 51px;      /* vertical center */
+    text-align: center;
+    transition: 0.3s;
+}
+
+.oncall .oncall-right .btn-talk:hover {
+    background: #e63946;
+    color: #fff;
+}
+
+/* Decorative Dots Background */
+.oncall::after {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    left: -80px;
+    width: 419px;
+    height: 419px;
+    background: url("images/dot.png") repeat;
+    opacity: 1;
+    z-index: 0;
+}
+
+/* Ensure content always stacks above */
+.oncall>* {
+    position: relative;
+    z-index: 1;
+}
